@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是健康菜谱界面的RecyclerView的每一项的布局样式 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_cook_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dip">
+
+    <ImageView
+        android:id="@+id/view_cook_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"/>
+
+    <android.microanswer.healthy.view.AutoMoveTextView
+        android:id="@+id/view_cook_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_cook_item_img"
+        android:layout_alignLeft="@id/view_cook_item_img"
+        android:layout_alignRight="@id/view_cook_item_img"
+        android:background="#aaffffff"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:text="奶油泡芙"
+        android:textColor="@color/black"
+        android:textSize="13sp"/>
+
+
+</RelativeLayout>

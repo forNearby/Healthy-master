@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/activity_friend_headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="12dp"
+        android:paddingTop="?android:attr/actionBarSize">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activity_friend_headview_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/head"
+            app:civ_border_color="@color/whilte"
+            app:civ_border_width="1dp"/>
+
+        <TextView
+            android:id="@+id/activity_friend_headview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_friend_headview_img"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="隔壁的王叔叔"
+            android:textColor="@color/whilte"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_friend_headview_title"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_friend_headview_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="男"
+                android:textColor="@color/whilte"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@color/whilte"
+                />
+
+            <TextView
+                android:id="@+id/activity_friend_headview_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="22岁"
+                android:textColor="@color/whilte"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@color/whilte"
+                />
+
+            <TextView
+                android:id="@+id/activity_friend_headview_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="四川成都"
+                android:textColor="@color/whilte"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_friend_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="4dp"
+        app:theme="@style/mDrawerArrowToggle"
+        app:title="好友信息"
+        app:titleTextColor="@color/whilte"/>
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/activity_friend_headview"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whilte">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.microanswer.healthy.view.AutoMoveTextView
+                android:id="@+id/activity_friend_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:text="我是一只美丽的隔壁的王叔叔，你要和我做朋友吗？点击关注哦我问吧！"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/line_color"/>
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:under_line_padding="12dp"
+                app:itemtitle="电话"
+                app:under_line_enable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="13541227014"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:under_line_padding="12dp"
+                app:itemtitle="QQ号码"
+                app:under_line_enable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="374288225"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:itemtitle="微博"
+                app:under_line_enable="true"
+                app:under_line_padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="飞翔的企鹅"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:itemtitle="用户积分"
+                app:under_line_enable="true"
+                app:under_line_padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="428"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:itemtitle="主页"
+                app:under_line_enable="true"
+                app:under_line_padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="www.baidu.com"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+
+            <android.microanswer.healthy.view.ItemView2
+                android:id="@+id/activity_friend_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:item_title_padding="15dp"
+                app:itemtitle="唯一识别码"
+                app:under_line_enable="true"
+                app:under_line_padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:paddingRight="12dp"
+                    android:text="114234"
+                    android:textSize="12sp"/>
+
+            </android.microanswer.healthy.view.ItemView2>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

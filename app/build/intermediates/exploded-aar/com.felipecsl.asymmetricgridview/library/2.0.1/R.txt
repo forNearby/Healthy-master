@@ -1,0 +1,2 @@
+int drawable item_divider_horizontal 0x7f020000
+int drawable item_divider_vertical 0x7f020001

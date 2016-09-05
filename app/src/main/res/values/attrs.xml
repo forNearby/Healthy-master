@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemView">
+        <attr name="item_title" format="string" />
+        <attr name="item_smallTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ItemView2">
+        <attr name="itemtitle" format="string"/>
+        <attr name="item_title_size" format="dimension"/>
+        <attr name="item_title_padding" format="dimension"/>
+        <attr name="item_title_text_color" format="color"/>
+        <attr name="under_line_enable" format="boolean"/>
+        <attr name="under_line_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LetterView">
+        <attr name="text_size" format="dimension"/><!-- 文本大小 -->
+        <attr name="text_color" format="color"/><!-- 文本颜色 -->
+        <attr name="text_current_color" format="color"/><!-- 当前选中文本颜色 -->
+        <attr name="under_line" format="boolean"/> <!-- 是否下划线 -->
+        <attr name="hint_text_size" format="dimension"/><!-- 提示文本大小 -->
+        <attr name="hint_text_color" format="color"/><!-- 提示文本颜色 -->
+        <attr name="hint_background" format="color|reference"/><!-- 提示背景 -->
+    </declare-styleable>
+    <declare-styleable name="CirCleRefreshLayout">
+        <attr name="AniBackColor" format="color" />
+        <attr name="AniForeColor" format="color" />
+        <attr name="CircleSmaller" format="integer"/>
+    </declare-styleable>
+</resources>

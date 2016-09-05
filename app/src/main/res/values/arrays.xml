@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sliding_menu">
+        <item>个人中心</item>
+        <item>@string/set</item>
+        <item>鼓励捐赠</item>
+        <item>关于软件</item>
+        <item>健康提示</item>
+    </string-array>
+    <string-array name="mian_item">
+        <item>健康</item>
+        <item>生活</item>
+        <item>@string/more</item>
+    </string-array>
+    <string-array name="exit_times">
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>3秒</item>
+        <item>4秒</item>
+    </string-array>
+    <string-array name="exit_times_values">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </string-array>
+    <string-array name="font_size">
+        <item>特小</item>
+        <item>小</item>
+        <item>普通</item>
+        <item>大</item>
+        <item>特大</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="main_set_info_entries">
+        <item>社会热点</item>
+        <item>食品新闻</item>
+        <item>疾病快讯</item>
+        <item>药品新闻</item>
+        <item>生活贴士</item>
+        <item>医疗新闻</item>
+        <item>企业要闻</item>
+        <item>随机选择</item>
+    </string-array>
+    <string-array name="main_set_info_values">
+        <item>6</item>
+        <item>5</item>
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="main_set_lore_entries">
+        <item>减肥瘦身</item>
+        <item>私密生活</item>
+        <item>女性保养</item>
+        <item>男性健康</item>
+        <item>孕婴手册</item>
+        <item>夫妻情感</item>
+        <item>育儿宝典</item>
+        <item>饮食健康</item>
+        <item>医疗护理</item>
+        <item>老人健康</item>
+        <item>孩子健康</item>
+        <item>四季养生</item>
+        <item>心里健康</item>
+        <item>随机选择</item>
+    </string-array>
+    <string-array name="main_set_lore_values">
+        <item>11</item>
+        <item>7</item>
+        <item>5</item>
+        <item>4</item>
+        <item>6</item>
+        <item>13</item>
+        <item>8</item>
+        <item>3</item>
+        <item>12</item>
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+        <item>9</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="main_set_book_entries">
+        <item>孕妇育儿</item>
+        <item>美容时尚</item>
+        <item>健康养生</item>
+        <item>两性生活</item>
+        <item>美食烹饪</item>
+        <item>修养心里</item>
+        <item>家庭教育</item>
+        <item>幽默笑话</item>
+        <item>生活杂谈</item>
+        <item>其它</item>
+        <item>随机选择</item>
+    </string-array>
+    <string-array name="main_set_book_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>-1</item>
+    </string-array>
+</resources>

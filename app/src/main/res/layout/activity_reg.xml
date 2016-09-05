@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context="android.microanswer.healthy.RegActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_reg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        app:theme="@style/mDrawerArrowToggle"
+        android:elevation="10dip"
+        android:title="@string/reg"
+        app:titleTextColor="@color/whilte" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/activity_reg_toolbar"
+        android:background="@color/whilte">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/activity_reg_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whilte"
+                android:layout_margin="20dip"
+                android:elevation="5dip"
+                android:translationZ="5dip"
+                android:padding="5dip"
+                android:text="@string/reg_desc"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:id="@+id/activity_reg_centerbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_reg_desc"
+                android:layout_marginBottom="25dip"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dip"
+                android:elevation="8dip"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/edittext_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/email" />
+
+                    <EditText
+                        android:id="@+id/activity_reg_edittext_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:contentDescription="输入您的常用邮件"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="11dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="\@"
+                        android:textColor="#55d"
+                        android:textSize="23sp" />
+
+                    <EditText
+                        android:id="@+id/activity_reg_edittext_acount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:contentDescription="账号只能是数字字母和下划线和$的组合，不能少于6个字符，开头不能为数字"
+                        android:gravity="center_vertical"
+                        android:hint="@string/acount"
+                        android:textSize="15sp"
+                        android:maxLength="20"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="11dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:src="@mipmap/key" />
+
+                    <EditText
+                        android:id="@+id/activity_reg_edittext_password1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="密码不能少于6位，请牢记密码"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:padding="11dip" />
+
+                    <CheckBox
+                        android:id="@+id/activity_reg_checkbox_seepwd"
+                        android:layout_width="45dip"
+                        android:layout_height="40dip"
+                        android:background="@drawable/pwdstate"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@null" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:src="@mipmap/key" />
+
+                    <EditText
+                        android:id="@+id/activity_reg_edittext_password2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:hint="@string/password2"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:contentDescription="重复输入上面的密码"
+                        android:padding="11dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:padding="11dip"
+                        android:src="@mipmap/sex" />
+
+                    <RadioGroup
+                        android:id="@+id/activity_reg_radiogroup_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dip">
+
+                        <RadioButton
+                            android:id="@+id/activity_reg_radiobutton_boy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:textSize="15sp"
+                            android:text="@string/boy" />
+
+                        <RadioButton
+                            android:id="@+id/activity_reg_radiobutton_gril"
+                            android:layout_width="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gril" />
+
+                        <RadioButton
+                            android:id="@+id/activity_reg_radiobutton_keep"
+                            android:layout_width="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/keep" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="2dip">
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:src="@mipmap/checkcode" />
+
+                    <EditText
+                        android:id="@+id/activity_reg_edittext_checkcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLength="4"
+                        android:textSize="15sp"
+                        android:background="@null"
+                        android:contentDescription="请输入右图的验证码"
+                        android:hint="@string/checkcode"
+                        android:inputType="number"
+                        android:padding="11dip" />
+
+                    <ImageView
+                        android:id="@+id/activity_reg_imageview_checknumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/checknumer" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_reg_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_reg_centerbox"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/defulat_click_bg"
+                android:elevation="6dip"
+                android:maxLength="4"
+                android:text="@string/reg"
+                android:textColor="@color/whilte" />
+
+            <LinearLayout
+                android:id="@+id/activity_reg_foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_reg_button_submit"
+                android:layout_margin="20dip"
+                android:paddingBottom="50dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_weight="1"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reg_width_thrid" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_weight="1"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/activity_reg_qq"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@mipmap/qq" />
+
+                    <ImageView
+                        android:id="@+id/activity_reg_sina"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:src="@mipmap/sina" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

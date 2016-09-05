@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="通用">
+
+        <SwitchPreference
+            android:checked="true"
+            android:key="preference_wecomle"
+            android:summary="开启软件时的一个提示"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:title="显示欢迎提示"/>
+
+        <ListPreference
+            android:entries="@array/exit_times"
+            android:entryValues="@array/exit_times_values"
+            android:key="preference_exittime"
+            android:summary="1秒"
+            android:title="双击退出间隔时间"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="高级">
+        <EditTextPreference
+            android:summary="设置一个网络请求的最长时间"
+            android:title="网络请求超时"/>
+        <ListPreference
+            android:entries="@array/font_size"
+            android:entryValues="@array/font_size_values"
+            android:summary="普通"
+            android:title="字体大小"/>
+        <Preference
+            android:summary="指定主界面加载数据的内容"
+            android:title="主界面数据设置">
+            <intent
+                android:action="android.microanswer.healthy.MainSetActivity"
+                android:targetClass="android.microanswer.healthy.MainSetActivity"
+                android:targetPackage="android.microanswer.healthy"
+                />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

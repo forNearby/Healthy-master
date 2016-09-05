@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_cook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_cook_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/mDrawerArrowToggle"
+        app:titleTextColor="@color/whilte"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="4dp"
+        android:background="@color/whilte"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_cook_head_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans_colorPrimary"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/activity_cook_img"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:src="@mipmap/cookimg"/>
+
+            <android.microanswer.healthy.view.AutoMoveTextView
+                android:id="@+id/activity_cook_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/activity_cook_img"
+                android:singleLine="true"
+                android:text="红薯饭"
+                android:background="@drawable/shape_whilte_round"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:textColor="#000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/activity_cook_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_cook_title"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_whilte_round"
+                android:padding="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/activity_cook_img"
+                android:maxLines="6"
+                android:text="就算受累下力、吃苦与等待其实都不可怕，老百姓嘛干任何事情都是需要付出努力和代价"/>
+
+            <TextView
+                android:id="@+id/activity_cook_like$dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_cook_desc"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/activity_cook_img"
+                android:background="@drawable/shape_rount_color"
+                android:paddingBottom="4dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="4dp"
+                android:text="收藏"
+                android:textColor="@color/whilte"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_cook_keywords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加载中..."/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#88888888"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:paddingBottom="12dp"
+            android:layout_height="wrap_content">
+
+            <android.microanswer.healthy.view.HtmlView
+                android:id="@+id/activity_cook_htmlview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

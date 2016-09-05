@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.11\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a0bdf70123d26dd83d8462d602b3a83a41934cf6">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\in.srain.cube-ultra-ptr-1.0.11_c9fdfb08c48059af9bc5135cc19ca4c5f95d33ed.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\libs\mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2_1eb468e55efe14244eb8c15976d30e381285188f.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.felipecsl.asymmetricgridview\library\2.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="cbfc065e5d005dda42cc7dd58d477e2f29926f0e">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.felipecsl.asymmetricgridview-library-2.0.1_0f1216da058572fe8d1f1c9abbaaa26c288b3c89.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.ashokvarma.android\bottom-navigation-bar\1.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="84a5e720e441032fc979314a4539f3d40079801b">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.ashokvarma.android-bottom-navigation-bar-1.3.0_036b44f741d3058666cb216227ee7ff7199f0146.jar" />
+    </item>
+    <item
+        jar="C:\Users\qiush\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.5\442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375\universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_fce44cc828966ed52cf69af9f140e1684d6bc184.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\libs\tagsoup-1.2.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="5584627487e984c03456266d3f8802eb85a9ce97">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\tagsoup-1.2.1_d7a55805be1e39dc53d384dc90d2b60a3460287a.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\2.0.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="b99798f653c15a17af6779bb9f01a66f2ee6e6ef">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.bigkoo-convenientbanner-2.0.5_c923d7ef09b9a5f6cfde1702fa2034930873d616.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_a5221f6117e075815b3cdb37a42db3d39e8eb520.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.1.1_a6203910b2648c5815800857fab9ab8c8f309c1e.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.1.1_54768625cad3e4e0a0de56514cefc086ab67f9e9.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="bf3b40dc96188cceae7d0096ba4c687e1d9f4644">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_c3c04132e6be60d8cbdec40e2ac551e7d49aaaef.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.1.1_948bc1d303c6bbdda5ee7e918a75c0f5dbc4d36b.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_c1c56b3093c36a3dd30477752479df48a919c194.jar" />
+    </item>
+    <item
+        jar="C:\Users\qiush\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.1.1\3af19f153122737b372622fa6c81dd11a1c6b999\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_9f78c41e521682a700425b6ba7cbb1c38abc4aec.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_2a1c60189a442f316bb52766c16f1922e8556f44.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\libs\open_sdk_r5756.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="7f7bf100e53d9099032f113728725e1843e1fbe2">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\open_sdk_r5756_3beb37cedf7fba8802c524d8b5d6b2d68a3cc786.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_ea79e05a15e93ac8a5ad2a2fb9e8c3035d04ddc8.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1b36ca994e9528a5ccdaf5cc37058d1a574b069d">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\instant-run_592bd0e56cfe634e2bc654727908154da45e148b.jar" />
+    </item>
+    <item
+        jar="C:\Users\qiush\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.2.13\40f60c83fac24f70d4c7c2a255dc9ad8e3749987\fastjson-1.2.13.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="40f60c83fac24f70d4c7c2a255dc9ad8e3749987">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\fastjson-1.2.13_a29c805720325bd3f27fef12db7f7b61f48c85c1.jar" />
+    </item>
+    <item
+        jar="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="D:\androidhuangjing\androidworkspace\Healthy-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.1.1_7a6dbd15b2dca5639590d44a88f618be401122ba.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp">
+
+    <android.microanswer.healthy.view.AutoMoveTextView
+        android:id="@+id/view_collected_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="改行做起了婴儿洗澡点"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/view_collected_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_collected_item_title"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/view_collected_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rount_color"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="健康咨询"
+            android:textColor="@color/whilte"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/view_collected_item_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="改行做起了婴儿洗澡店"
+            android:textColor="#888888"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_collected_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_collected_item_ll"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:singleLine="true"
+        android:text="收藏时间：2016-8-4"
+        android:textSize="10sp"/>
+
+
+</RelativeLayout>

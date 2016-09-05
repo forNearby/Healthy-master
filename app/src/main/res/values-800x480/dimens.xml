@@ -1,0 +1,5 @@
+<resources>
+  <dimen name="group_title_size">10sp</dimen>
+  <dimen name="knowledge_desc_size">11sp</dimen>
+  <dimen name="ask_text_size">9.5sp</dimen>
+</resources>

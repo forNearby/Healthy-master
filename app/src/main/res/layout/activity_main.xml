@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.microanswer.healthy.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="6dip"
+            android:title="@string/app_name"
+            app:theme="@style/mDrawerArrowToggle"
+            app:titleTextColor="@color/whilte">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/activity_main_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/activity_main_toolbar_search"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/whilte"
+                    android:layout_marginRight="16dip"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/activity_main_toolbar_search"
+                    android:layout_width="56dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClick"
+                    android:padding="12dip"
+                    android:src="@drawable/ic_search" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/activity_main_relativelayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/activity_main_toolbar"
+            android:background="@color/whilte">
+            <!-- TODO -->
+            <FrameLayout
+                android:id="@+id/activity_main_fragment_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/activity_main_bottomnavigationbar"
+                android:layout_height="wrap_content">
+
+
+                <fragment
+                    android:id="@+id/activity_main_fragment_3"
+                    android:name="android.microanswer.healthy.fragment.MoreFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <fragment
+                    android:id="@+id/activity_main_fragment_2"
+                    android:name="android.microanswer.healthy.fragment.LifeFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <fragment
+                    android:id="@+id/activity_main_fragment_1"
+                    android:name="android.microanswer.healthy.fragment.HealthyFragment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+            </FrameLayout>
+
+            <com.ashokvarma.bottomnavigation.BottomNavigationBar
+                android:id="@+id/activity_main_bottomnavigationbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bnbActiveColor="@color/whilte"
+                app:bnbBackgroundColor="@color/blue_light"
+                app:bnbBackgroundStyle="background_style_static"
+                app:bnbElevation="10dip"
+                app:bnbMode="mode_fixed"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/activity_main_navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@null"
+        app:headerLayout="@layout/navigationview_head"
+        app:menu="@menu/activity_main_menu">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+    <!--<RelativeLayout
+        android:id="@+id/activity_main_drawerlayout_content"
+        android:layout_width="240dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <include
+            layout="@layout/view_sliding_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>-->
+
+</android.support.v4.widget.DrawerLayout>

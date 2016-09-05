@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/view_sliding_menu_top"
+                android:layout_width="match_parent"
+                android:layout_height="170dip"
+                android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view_sliding_menu_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/view_sliding_menu_textview_wealther"
+        android:layout_margin="10dip"
+        app:civ_border_color="@color/whilte"
+        app:civ_border_width="0.7dp"
+        android:onClick="onClick"
+        android:src="@mipmap/head" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_sliding_menu_head"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/view_sliding_menu_head"
+        android:layout_toRightOf="@id/view_sliding_menu_head"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <android.microanswer.healthy.view.AutoMoveTextView
+            android:id="@+id/view_sliding_menu_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_sliding_menu_head"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:paddingBottom="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip"
+            android:text="@string/defultnickname"
+            android:textColor="@color/whilte"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.microanswer.healthy.view.AutoMoveTextView
+                android:id="@+id/view_sliding_menu_singnature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rount_color"
+                android:paddingBottom="1dip"
+                android:paddingLeft="7dip"
+                android:paddingRight="7dip"
+                android:paddingTop="1dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/vip"
+                android:textColor="@color/whilte"
+                android:textSize="11sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/view_sliding_menu_textview_wealther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/weather_bg"
+        android:gravity="right"
+        android:onClick="onClick"
+        android:paddingBottom="2dip"
+        android:paddingRight="20dip"
+        android:paddingTop="2dip"
+        android:text="天气加载中..."
+        android:textSize="13sp" />
+</RelativeLayout>

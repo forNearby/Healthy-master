@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d7814</color>
+    <color name="colorPrimaryDark">#225c0f</color>
+    <color name="colorAccent">#ab575f</color>
+    <color name="trans_colorPrimary">#aa2d7814</color>
+    <color name="trancent">#00ffffff</color>
+
+    <color name="whilte">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="red">#aa3300</color>
+    <color name="red_drak">#883300</color>
+    <color name="blue_light">#44aabb</color>
+    <color name="line_color">#88888888</color>
+    <color name="refreshtopbg">#ff8b90af</color>
+</resources>

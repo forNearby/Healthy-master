@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="@color/whilte"
+        android:elevation="3dp"
+        app:theme="@style/mDrawerArrowToggle"
+        app:titleTextColor="@color/whilte"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/activity_about_toolbar"
+        android:background="@color/whilte">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whilte">
+
+
+            <LinearLayout
+                android:id="@+id/activity_about_logo_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaeeeeee"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dip">
+
+                <ImageView
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_marginTop="8dip"
+                    android:src="@mipmap/tb"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="版本:v1.0.0"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_about_logo_linearlayout"
+                android:padding="12dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.microanswer.healthy.view.ItemView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:item_title="版本更新">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="6dip"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_item_right"
+                            android:visibility="invisible"/>
+                    </android.microanswer.healthy.view.ItemView>
+
+                    <android.microanswer.healthy.view.ItemView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        app:item_title="系统通知">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="6dip"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_item_right"/>
+                    </android.microanswer.healthy.view.ItemView>
+
+                    <android.microanswer.healthy.view.ItemView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        app:item_title="帮助与反馈">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="6dip"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_item_right"/>
+                    </android.microanswer.healthy.view.ItemView>
+
+                    <android.microanswer.healthy.view.ItemView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        app:item_title="评分">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="6dip"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_item_right"/>
+                    </android.microanswer.healthy.view.ItemView>
+
+                    <android.microanswer.healthy.view.ItemView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        app:item_title="捐赠">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="6dip"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_item_right"/>
+                    </android.microanswer.healthy.view.ItemView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_friends"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_friends_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:subtitleTextColor="@color/whilte"
+        app:theme="@style/mDrawerArrowToggle"
+        app:titleTextColor="@color/whilte"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/activity_friends_toolbar"
+        android:background="@color/whilte">
+
+        <LinearLayout
+            android:id="@+id/activity_friends_serch_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/activity_friends_letterview"
+            android:layout_height="wrap_content"
+            android:background="#bbbbbbbb"
+            android:orientation="horizontal"
+            android:padding="5dip">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white"
+                android:hint="搜索你关注的人"
+                android:paddingBottom="6dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="6dip"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_friends_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/activity_friends_serch_linearlayout"
+            android:layout_toLeftOf="@+id/activity_friends_letterview">
+
+            <LinearLayout
+                android:id="@+id/activity_friends_loading_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中..."/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_friends_loading_fail_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="加载失败，或者你没有好友。\n点击重试"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/activity_friends_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+        <android.microanswer.healthy.view.LetterView
+            android:id="@+id/activity_friends_letterview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:hint_text_color="@color/whilte"
+            app:hint_text_size="25sp"
+            app:text_color="@color/whilte"
+            app:text_current_color="@color/colorAccent"
+            app:hint_background="@drawable/trans_colorprimary_bg"
+            app:text_size="12sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

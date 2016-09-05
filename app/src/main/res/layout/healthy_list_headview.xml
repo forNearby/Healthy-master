@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <include
+        android:id="@+id/healthy_list_headview_banner"
+        layout="@layout/healthy_banner"
+        android:layout_width="match_parent"
+        android:elevation="3dp"
+        android:layout_height="170dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dip"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="@string/healthy_lore"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/healthy_list_headview_moerlore"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多>"
+            android:textSize="14sp"/>
+    </LinearLayout> <!-- 健康知识标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@+id/centerview1_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/centerview1_notuse"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/centerview1_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+        </RelativeLayout>  <!-- 健康知识第一排 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@+id/centerview2_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/centerview2_notuse"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@id/centerview2_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+        </RelativeLayout>  <!-- 健康知识第二排 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="3dp"
+                android:layout_toLeftOf="@+id/centerview3_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/centerview3_notuse"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@id/centerview3_notuse"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_lore_img_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <TextView
+                    android:id="@+id/healthy_list_headview_lore_tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#dfff"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="2"
+                    android:text="加载中..."
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+        </RelativeLayout>  <!-- 健康知识第三排 -->
+
+    </LinearLayout> <!-- 健康知识数据6个 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dip"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="健康图书"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多>"
+            android:textSize="14sp"/>
+    </LinearLayout> <!-- 健康图书标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#aaffffff"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:background="#aaffffff"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#aaffffff"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#aaffffff"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:background="#aaffffff"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:background="#aaffffff"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="marquee"
+                    android:background="#aaffffff"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#aaffffff"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/whilte"
+                android:elevation="3dp">
+
+                <ImageView
+                    android:id="@+id/healthy_list_headview_book_img9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loading"/>
+
+                <android.microanswer.healthy.view.AutoMoveTextView
+                    android:id="@+id/healthy_list_headview_book_tv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#aaffffff"
+                    android:ellipsize="marquee"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:singleLine="true"
+                    android:text="加载中..."/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout> <!-- 健康图书数据9个 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dip"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="更多资讯"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="更多>"
+            android:textSize="14sp"/>
+    </LinearLayout> <!-- 更多资讯标题 -->
+
+</merge>

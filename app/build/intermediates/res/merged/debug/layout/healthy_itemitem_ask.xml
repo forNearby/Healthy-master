@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingLeft="12dip"
+              android:paddingRight="12dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_question$ask1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/defulat_click_bg"
+            android:clickable="true"
+            android:elevation="3dip"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/ask_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_question$ask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/defulat_click_bg"
+            android:clickable="true"
+            android:elevation="3dip"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/ask_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_question$ask3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/defulat_click_bg"
+            android:clickable="true"
+            android:elevation="3dip"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/ask_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_question$ask4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/defulat_click_bg"
+            android:clickable="true"
+            android:elevation="3dip"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/ask_text_size"/>
+    </RelativeLayout>
+</LinearLayout>

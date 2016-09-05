@@ -1,0 +1,71 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_vertical_margin">6dp</dimen>
+
+    <dimen name="logo_size_width">80dip</dimen>
+    <dimen name="logo_size_height">@dimen/logo_size_width</dimen>
+
+<!--
+    <dimen name="fixed_min_width">120dp</dimen>
+    <dimen name="fixed_min_width_small_views">104dp</dimen>
+    <dimen name="fixed_max_width">168dp</dimen>
+    <dimen name="fixed_width_padding">12dp</dimen>
+
+    <dimen name="fixed_height">56dp</dimen>
+    <dimen name="fixed_height_top_padding_inactive">2dp
+    </dimen>&lt;!&ndash; 8(Top Padding) - 12/2(extra padding due to badges) = 2 &ndash;&gt;
+    <dimen name="fixed_height_top_padding_active">0dp
+    </dimen>&lt;!&ndash; 6(Top Padding) - 12/2(extra padding due to badges) = 0 &ndash;&gt;
+    <dimen name="fixed_height_bottom_padding">10dp</dimen>
+
+    <dimen name="fixed_label_active">14sp</dimen>
+    <dimen name="fixed_label_inactive">12sp</dimen>
+    <item name="fixed_label_active_to_inactive_ratio" format="float" type="dimen">0.857</item>
+
+    <dimen name="fixed_icon_grid">24dp</dimen>
+    <dimen name="fixed_icon_badge_grid_height">36dp
+    </dimen>&lt;!&ndash; this adds 6 dp extra to top and bottom icon &ndash;&gt;
+    <dimen name="fixed_icon_badge_grid_width">48dp
+    </dimen>&lt;!&ndash; this adds 6 dp extra to top and bottom icon &ndash;&gt;
+
+
+    <dimen name="shifting_min_width_active">96dp</dimen>
+    <dimen name="shifting_max_width_active">168dp</dimen>
+    <dimen name="shifting_min_width_inactive">64dp</dimen>
+    <dimen name="shifting_max_width_inactive">96dp</dimen>
+    <dimen name="shifting_width_custom_padding">6dp</dimen>
+
+    <dimen name="shifting_height">56dp</dimen>
+    <dimen name="shifting_height_bottom_padding_inactive">16dp
+    </dimen>&lt;!&ndash; not used because in inactive state text-view will be hidden and for icon top padding would be enough &ndash;&gt;
+    <dimen name="shifting_height_bottom_padding_active">10dp</dimen>
+    <dimen name="shifting_height_top_padding_active">0dp
+    </dimen>&lt;!&ndash; 6(Top padding) - 12/2(extra padding due to badges) = 0 &ndash;&gt;
+    <dimen name="shifting_height_top_padding_inactive">10dp
+    </dimen>&lt;!&ndash; 56(total) - 24(icon) - 16(bottom padding inactive) = 16 ||| 16 - 12/2(extra padding due to badges)  = 10&ndash;&gt;
+
+    <dimen name="shifting_label">14sp</dimen>
+
+
+    <dimen name="shifting_icon_grid">24dp</dimen>
+    <dimen name="shifting_icon_badge_grid_height">36dp</dimen>
+    <dimen name="shifting_icon_badge_grid_width">48dp</dimen>
+
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="bottom_navigation_padded_height">64dp</dimen>
+    <dimen name="bottom_navigation_top_margin_correction">-8dp</dimen>&lt;!&ndash; 64 - 56 = 8 &ndash;&gt;
+
+    <dimen name="badge_text_size">12sp</dimen>&lt;!&ndash; 10 &ndash;&gt;
+    <dimen name="badge_corner_radius">13dp</dimen>&lt;!&ndash; 15 &ndash;&gt;
+    <dimen name="badge_width_padding">4dp</dimen>&lt;!&ndash; 4 &ndash;&gt;
+    <dimen name="badge_height_padding">1dp</dimen>&lt;!&ndash; 1 &ndash;&gt;
+    <dimen name="badge_top_margin">2dp</dimen>&lt;!&ndash; 2 &ndash;&gt;-->
+
+    <dimen name="group_title_size">12sp</dimen>
+    <dimen name="knowledge_desc_size">13sp</dimen>
+    <dimen name="banner_item_title_size">12sp</dimen>
+    <dimen name="banner_item_smalltitle_size">10sp</dimen>
+    <dimen name="ask_text_size">12sp</dimen>
+</resources>

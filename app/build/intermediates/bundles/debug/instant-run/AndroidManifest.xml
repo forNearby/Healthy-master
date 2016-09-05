@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.microanswer.healthy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        name="android.microanswer.healthy.application.Healthy"
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/tb"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="android.microanswer.healthy.service.HealthyService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="android.microanswer.healthy.recevier.VolumeReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.media.VOLUME_CHANGED_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="android.microanswer.healthy.recevier.HealthyKillReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.microanswer.healthy.servicekilled" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 腾讯SDK服务使用的Activity 开始 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- 腾讯SDK服务使用的Activity 结束 -->
+
+        <activity android:name="android.microanswer.healthy.LogoActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="android.microanswer.healthy.MainActivity" />
+        <activity
+            android:name="android.microanswer.healthy.UserCenterActivity"
+            android:label="@string/usercenter" />
+        <activity
+            android:name="android.microanswer.healthy.RegActivity"
+            android:label="@string/reg"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="android.microanswer.healthy.LoginActivity"
+            android:label="@string/login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="android.microanswer.healthy.QQLoginActivity"
+            android:label="QQ登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.SetActivity"
+            android:label="@string/set"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.AboutActivity"
+            android:label="@string/about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.FriendsActivity"
+            android:label="关注好友"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.MainSetActivity"
+            android:label="主界面设置"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.microanswer.healthy.MainSetActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.microanswer.healthy.DonationActivity"
+            android:label="捐赠"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.LoreInfoAskActivity"
+            android:label="详细信息"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.CollectedActivity"
+            android:label="我的收藏"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.BookActivity"
+            android:label="图书详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.CookActivity"
+            android:label="菜谱详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.FoodActivity"
+            android:label="食物详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.MoreLoreActivity"
+            android:label="更多健康知识"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.microanswer.healthy.HeadPhotoCutActivity"
+            android:label="头像裁剪"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

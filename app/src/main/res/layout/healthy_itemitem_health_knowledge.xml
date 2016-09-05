@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="12dip"
+    android:orientation="horizontal"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@color/whilte"
+        android:elevation="3dip"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/knowledge_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/viewpager_healthy_itemitem_health_knowledge_img1"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:minWidth="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/loading"/>
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_knowledge_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/viewpager_healthy_itemitem_health_knowledge_img1"
+            android:layout_alignRight="@id/viewpager_healthy_itemitem_health_knowledge_img1"
+            android:layout_below="@+id/viewpager_healthy_itemitem_health_knowledge_img1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="@dimen/knowledge_desc_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@color/whilte"
+        android:elevation="3dip"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/knowledge_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="3dip">
+        <ImageView
+            android:id="@+id/viewpager_healthy_itemitem_health_knowledge_img2"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:minWidth="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/loading"/>
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_knowledge_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/viewpager_healthy_itemitem_health_knowledge_img2"
+            android:layout_alignRight="@id/viewpager_healthy_itemitem_health_knowledge_img2"
+            android:layout_below="@+id/viewpager_healthy_itemitem_health_knowledge_img2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="@dimen/knowledge_desc_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

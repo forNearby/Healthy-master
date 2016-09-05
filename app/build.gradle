@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "android.microanswer.healthy"
+        minSdkVersion 15
+//        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.0'
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.felipecsl.asymmetricgridview:library:2.0.1'
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/tagsoup-1.2.1.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+}

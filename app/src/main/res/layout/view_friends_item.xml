@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 好友列表单项试图 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view_friends_item_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/head_bg"
+        app:civ_border_color="#88888888"
+        app:civ_border_width="0.5dip"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_friends_item_img"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view_friends_item_img"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/view_friends_item_img"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="6dip">
+
+        <TextView
+            android:id="@+id/view_friends_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="下海枯丶石烂"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/view_friends_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="曾经的曾经都是回忆丶仅此而已"
+            android:textColor="#88000000"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

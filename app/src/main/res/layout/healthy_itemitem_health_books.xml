@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="6dip"
+    android:paddingBottom="10dip"
+    android:paddingRight="6dip">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:background="@color/whilte"
+        android:elevation="3dip"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/books_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/viewpager_healthy_itemitem_health_books_img1"
+            android:layout_width="match_parent"
+            android:layout_height="140dip"
+            android:minWidth="100dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/loading"/>
+
+        <TextView
+            android:id="@+id/viewpager_healthy_itemitem_health_books_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/viewpager_healthy_itemitem_health_books_img1"
+            android:layout_alignLeft="@id/viewpager_healthy_itemitem_health_books_img1"
+            android:layout_alignRight="@+id/viewpager_healthy_itemitem_health_books_img1"
+            android:background="#66000000"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:textColor="@color/whilte"
+            android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:background="@color/whilte"
+        android:clickable="true"
+        android:elevation="3dip">
+
+        <RelativeLayout
+            android:id="@+id/books_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="3dip">
+
+            <ImageView
+                android:id="@+id/viewpager_healthy_itemitem_health_books_img2"
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:minWidth="100dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/loading"/>
+
+            <TextView
+                android:id="@+id/viewpager_healthy_itemitem_health_books_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewpager_healthy_itemitem_health_books_img2"
+                android:layout_alignLeft="@id/viewpager_healthy_itemitem_health_books_img2"
+                android:layout_alignRight="@+id/viewpager_healthy_itemitem_health_books_img2"
+                android:background="#66000000"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/whilte"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@color/whilte"
+        android:clickable="true"
+        android:elevation="3dip">
+
+        <RelativeLayout
+            android:id="@+id/books_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="3dip">
+
+            <ImageView
+                android:id="@+id/viewpager_healthy_itemitem_health_books_img3"
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:minWidth="100dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/loading"/>
+
+            <TextView
+                android:id="@+id/viewpager_healthy_itemitem_health_books_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewpager_healthy_itemitem_health_books_img3"
+                android:layout_alignLeft="@id/viewpager_healthy_itemitem_health_books_img3"
+                android:layout_alignRight="@+id/viewpager_healthy_itemitem_health_books_img3"
+                android:background="#66000000"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/whilte"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
